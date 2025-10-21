@@ -1,4 +1,4 @@
-window.addEventListener("keydown", async (e) => {
+   window.addEventListener("keydown", async (e) => {
         if (e.ctrlKey && 83 == e.which) return e.preventDefault(), !1;
       }),
         window.addEventListener("contextmenu", (e) => e.preventDefault()),
@@ -159,3 +159,4 @@ window.addEventListener("keydown", async (e) => {
         el.style.display = "none";
         el.textContent = "";
       }
+  
